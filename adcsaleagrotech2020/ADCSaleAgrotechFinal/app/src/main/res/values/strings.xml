@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">ADC Sale Agrotech</string>
+    <string name="label_title_menu_item_history">Nhật ký</string>
+
+    <string name="title_notification">Thông báo</string>
+    <!--màn hình đăng nhập-->
+    <string name="label_title_login">Đăng nhập</string>
+    <string name="label_title_error_message_login_dialog">Lỗi đăng nhập</string>
+    <string name="title_not_session">Lỗi truy cập ứng dụng</string>
+    <string name="title_message_not_session">Hết phiên giao dịch, vui lòng thử lại</string>
+    <string name="title_message_not_session_second_label">đăng nhập lại!</string>
+    <string name="title_error_connection">Lỗi kết nối mạng</string>
+    <string name="title_message_not_allow_connection_internet">Bạn chưa kết nối mạng internet, vui lòng kiểm tra lại</string>
+    <string name="label_content_line_first_error_message_login_dialog">Tài khoản chưa đăng ký. Vui lòng</string>
+    <string name="label_content_line_second_error_message_login_dialog">liên hệ IT để được hướng dẫn!</string>
+    <string name="label_exit">Thoát</string>
+    <string name="label_search">Tìm kiếm...</string>
+    <string name="label_title_notification">Thông báo</string>
+    <string name="label_title_phone_number">Số điện thoại</string>
+    <string name="title_error_access_system">Lỗi truy cập hệ thống</string>
+    <string name="label_title_not_allow_use_permission">Lỗi cấp quyền thiết bị</string>
+    <string name="label_content_not_allow_use_permission">Bạn chưa cấp đủ quyền để sử dụng các chức năng của ứng dụng.</string>
+    <string name="label_title_place">Địa điểm</string>
+    <!--    Màn hình xác thực-->
+    <string name="verify">Xác thực</string>
+    <string name="verify_phone_number">Xác thực số điện thoại</string>
+    <string name="verify_code">Mã xác thực</string>
+    <string name="label_title_hint_enter_code_verify">Nhập mã xác thực</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="title_wrong_otp">Sai mã xác thực</string>
+    <!--màn hình dashboard-->
+    <string name="label_title_home_page_dashboard_activity">Trang chính</string>
+    <string name="label_title_sale_dashboard_activity">Bán hàng</string>
+    <string name="label_title_receive_money_dashboard_activity">Thu tiền</string>
+    <string name="label_title_cost_dashboard_activity">Chi phí</string>
+    <string name="label_title_customer_dashboard_activity">Khách hàng</string>
+    <string name="label_title_service_dashboard_activity">Hàng hóa, dịch vụ</string>
+    <string name="label_title_notification_dashboard_activity">Chính sách</string>
+    <string name="label_title_document_dashboard_activity">Hồ sơ của tôi</string>
+    <string name="label_title_feed_back_dashboard_activity">Phản hồi</string>
+    <string name="label_title_sign_out_dashboard_activity">Đăng xuất</string>
+    <string-array name="nav_item_dashboard_activity_titles_main">
+        <item>@string/label_title_home_page_dashboard_activity</item>
+        <item>@string/label_title_sale_dashboard_activity</item>
+        <item>@string/label_title_receive_money_dashboard_activity</item>
+        <item>@string/label_title_cost_dashboard_activity</item>
+        <item>@string/label_title_customer_dashboard_activity</item>
+        <item>@string/label_title_service_dashboard_activity</item>
+    </string-array>
+    <string-array name="nav_item_dashboard_activity_titles_sub">
+        <item>@string/label_title_document_dashboard_activity</item>
+        <item>@string/label_title_feed_back_dashboard_activity</item>
+    </string-array>
+    <!--    Màn hình tạo đơn hàng-->
+    <string name="label_title_employee">Nhân viên</string>
+    <string name="label_title_empty_choose_employee">Chọn nhân viên</string>
+    <string name="label_title_create_order">Đặt hàng</string>
+    <string name="label_title_customer">Khách hàng</string>
+    <string name="label_title_empty_choose_customer">Chọn khách hàng</string>
+    <string name="label_title_date_delivery">Ngày giao hàng</string>
+    <string name="label_title_payment_term">Hạn thanh toán</string>
+    <string name="label_title_delivery_receive_money">Giao hàng thu tiền</string>
+    <string name="label_title_note">Ghi chú</string>
+    <string name="label_title_hint_note">Nhập nội dung ghi chú</string>
+    <string name="title_message_choose_product_exist">Bạn đã chọn sản phẩm này trước đó</string>
+    <string name="title_message_empty_choose_employee">Bạn chưa chọn nhân viên</string>
+    <string name="title_message_empty_choose_customer">Bạn chưa chọn khách hàng</string>
+    <string name="title_message_empty_choose_product">Bạn chưa chọn sản phẩm</string>
+    <string name="title_message_input_quantity_choose_product_invalid">Bạn nhập số lượng sản phẩm không hợp lệ</string>
+    <!--    màn hình chi tiết đơn hàng-->
+    <string name="label_title_total_salary">Tổng tiền</string>
+    <string name="label_title_status_order">Trạng thái</string>
+    <string name="label_title_date_due">Ngày đến hạn</string>
+    <string name="label_title_info_order">Thông tin thanh toán</string>
+    <!--    Màn hình thông tin thu hộ-->
+    <string name="label_title_receive_header_tab">Nhận thu</string>
+    <string name="label_title_require_header_tab">Nhu cầu</string>
+    <string name="label_title_receipt_detail_request">Thông tin thu hộ</string>
+    <string name="label_text_company">Công ty</string>
+    <string name="label_text_payer">Người nộp tiền</string>
+    <string name="label_text_address">Địa chỉ</string>
+    <string name="label_text_contacts">Liên hệ</string>
+    <string name="label_text_take_a_phone_call">Gọi điện</string>
+    <string name="label_text_reason">Lý do thu tiền</string>
+    <string name="label_text_amount">Số tiền cần thu</string>
+    <!--    Màn hình phiếu thu-->
+    <string name="label_title_receipt_detail">Phiếu thu</string>
+    <string name="label_text_proceeds">Tiền thu thực tế</string>
+    <string name="label_text_collected">Đã thu</string>
+    <string name="label_text_bank_transfer_customers">Khách hàng chuyển khoản</string>
+    <!--màn hình phiếu nộp tiền-->
+    <string name="label_title_payment_slip">Phiếu nộp tiền</string>
+    <string name="label_title_person_payment">Người nộp tiền</string>
+    <string name="label_title_bank">Nơi nộp</string>
+    <string name="label_title_empty_bank_choose">Chưa chọn ngân hàng</string>
+    <string name="label_title_number_money_pay">Số tiền nộp</string>
+    <string name="label_title_image">Hình ảnh</string>
+    <string name="label_title_filed_complete">Đã nộp</string>
+    <string name="label_title_debit">Công nợ khách hàng</string>
+    <string name="label_title_menu_image">Hình ảnh</string>
+    <string name="label_tab_receipt">Phải thu</string>
+    <string name="label_tab_deposit">Nộp tiền</string>
+
+    <!--menu more-->
+    <string name="label_text_delete">Xóa đơn hàng</string>
+    <string name="label_text_cancel">Hủy đơn hàng</string>
+    <string name="label_text_diary">Xem nhật ký</string>
+    <string name="todo">TODO</string>
+    <string name="label_debt_customer">Công nợ</string>
+    <string name="label_text_cancel_filter">Bỏ lọc</string>
+    <string name="label_text_filter">Áp dụng</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    màn hình chi tiết sản phẩm-->
+    <string name="label_text_product_info">Thông tin sản phẩm</string>
+    <string name="label_text_price">Giá bán</string>
+    <string name="label_text_specifications">Quy cách</string>
+    <string name="label_text_expiry_date">Hạn sử dụng</string>
+    <string name="label_text_ingredients">Thành phần</string>
+    <string name="label_text_effect">Công dụng</string>
+    <string name="body_text_effect">Tác động cộng hưởng hoàn hảo của 2 hoạt chất trừ bệnh
+        tiên tiến giúp phòng ngừa nhiều bệnh quan trọng.
+        \n\nĐặc trị Lem lép hạt trên lúa. \n\nCó cơ chế phòng
+        trừ “đa tác động” giúp ngăn chặn nấm bệnh xâm nhiễm, truy diệt nấm bên trong.
+        \n\nGiúp lúa vô gạo nhanh, hạt chín đẹp, giữ lá đòng khi chín còn mơ.</string>
+    <string name="label_text_time">Thời gian</string>
+
+    <!--    CalendarDialog-->
+    <string name="label_text_choose">Chọn</string>
+    <string name="label_text_start_date">Start date</string>
+    <string name="label_text_end_date">End date</string>
+
+    <!--    màn hình phiếu thu-->
+    <string name="label_title_error_receipt_able_amount_not_accept_in_Collected">Bạn nhập số tiền thu thực tế không hợp lệ</string>
+    <string name="label_title_error_receipt_able_amount_not_accept_in_TransferCustomer">Bạn nhập số tiền khách hàng chuyển khoản không hợp lệ</string>
+
+    <!--    màn hình phiếu nộp tiền-->
+    <string name="label_title_error_choose_bank">Bạn chưa chọn ngân hàng</string>
+    <string name="label_title_error_amount_payment">Bạn chưa nhập số tiền nộp</string>
+
+</resources>

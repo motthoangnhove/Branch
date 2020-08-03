@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?><!--màn hình chi tiết đơn hàng-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="orderDetail"
+            type="com.adcvn.adcsaleagrotech.action.activity.orderdetail.middleinterface.IOrderDetailViewModel"/>
+    </data>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dFFFFFF">
+
+    <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/d9dp">
+
+            <ImageButton
+                android:id="@+id/ibBack"
+                style="@style/ImageButtonBasic"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvTitleOrderDetail"
+                style="@style/TextTitleHeaderCenter"/>
+
+            <LinearLayout
+                android:id="@+id/lyMenu"
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <ImageButton
+                    android:id="@+id/ibMenu"
+                    style="@style/ImageButtonBasic"
+                    android:src="@drawable/ic_more"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/header_bottom_shadow" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d70dp"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d30dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d35dp">
+
+
+                <TextView
+                    style="@style/TextRobotoLightBasic"
+                    android:text="@string/label_title_employee" />
+
+                <TextView
+                    android:id="@+id/tvNameEmployee"
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_marginTop="@dimen/d15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_title_customer" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvCustomerName"
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_marginTop="@dimen/d15dp"
+                    android:lines="3"/>
+
+                <TextView
+                    style="@style/TextRobotoLightBasic"
+                    android:layout_marginTop="@dimen/d30dp"
+                    android:text="@string/label_text_address" />
+
+                <TextView
+                    android:id="@+id/tvAddressCustomer"
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_marginTop="@dimen/d15dp"
+                    android:lines="3"/>
+
+                <TextView
+                    android:id="@+id/tvContactName"
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_marginTop="@dimen/d18dp"
+                    android:drawableStart="@drawable/ic_contacts_name"
+                    android:drawablePadding="@dimen/d14dp" />
+
+                <br.com.sapereaude.maskedEditText.MaskedEditText
+                    android:id="@+id/mEdContactPhone"
+                    style="@style/TextRobotoRegularBasic"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginTop="@dimen/d15dp"
+                    android:drawableStart="@drawable/ic_contacts_phone"
+                    android:drawablePadding="@dimen/d14dp"
+                    mask:mask="#### ### ###" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d5dp"
+                android:background="@color/dF1F0F5" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d25dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d25dp">
+
+                <LinearLayout style="@style/LinearLayoutHorizontalBasic">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:text="@string/label_title_date_delivery" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvDeliveryDate"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontalBasic"
+                    android:layout_marginTop="@dimen/d30dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:text="@string/label_title_payment_term" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvPaymentTermName"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontalBasic"
+                    android:layout_marginTop="@dimen/d15dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/label_title_delivery_receive_money" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvIsReceiptDelivery"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/ic_check_box" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d5dp"
+                android:background="@color/dF1F0F5" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d25dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d25dp">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvProductOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false" />
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:paddingStart="@dimen/d10dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d20dp">
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontalBasic"
+                    android:paddingStart="@dimen/d18dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:text="@string/label_title_total_salary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvTotalAmountSalesOrder"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="right"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d5dp"
+                android:background="@color/dF1F0F5" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d24dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d35dp">
+
+                <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+                    <TextView
+                        style="@style/TextRobotoMediumBasic"
+                        android:text="@string/label_title_info_order" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontalBasic"
+                    android:layout_marginTop="@dimen/d30dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:text="@string/label_title_date_due" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvDueDateOrderDetail"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontalBasic"
+                    android:layout_marginTop="@dimen/d30dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:text="@string/label_title_status_order" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvStatusOrderDetail"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutHorizontalBasic"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d18dp">
+          <ImageView
+              android:id="@+id/ivMenuItemNotification"
+              style="@style/iconMenuItemLeft"
+              android:background="@drawable/ic_polyce_default" />
+    </LinearLayout>
+            <TextView
+                android:id="@+id/tvLabelMenuItemNotification"
+                style="@style/labelMenuItemLeft"
+                android:text="@string/label_title_notification_dashboard_activity"/>
+</LinearLayout>

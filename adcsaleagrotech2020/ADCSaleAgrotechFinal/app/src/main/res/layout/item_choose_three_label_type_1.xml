@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerChooseThreeLabel"
+    style="@style/LinearLayoutVerticalBasic">
+
+    <LinearLayout style="@style/LinearLayoutHorizontalBasic">
+
+        <RelativeLayout
+            android:layout_width="@dimen/d45dp"
+            android:layout_height="@dimen/d45dp"
+            android:layout_marginTop="@dimen/d18dp"
+            android:layout_marginEnd="@dimen/d10dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civAvatar"
+                android:layout_width="@dimen/d45dp"
+                android:layout_height="@dimen/d45dp"
+                android:background="@drawable/ic_gray_avatar_background_dialog" />
+
+            <TextView
+                android:id="@+id/tvAvatar"
+                style="@style/TextAvatarName"
+                android:text="TQ" />
+        </RelativeLayout>
+
+        <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+            <TextView
+                android:id="@+id/tvFirstLabelChoose"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_marginTop="@dimen/d28dp"
+                android:text="Nguyễn Văn An"
+                android:textColor="@color/d000000" />
+
+            <TextView
+                android:id="@+id/tvSecondLabelChoose"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_marginTop="@dimen/d20dp"
+                android:text="Ấp Mỹ Đông 2, xã Mỹ Quới, thị xã Ngã Năm, Sóc Trăng"
+                android:textColor="@color/d7A7F83" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1dp"
+        android:layout_marginTop="@dimen/d18dp"
+        android:background="@color/dF2F2F2" />
+
+</LinearLayout>

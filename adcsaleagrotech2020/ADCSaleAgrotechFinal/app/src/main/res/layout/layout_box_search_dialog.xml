@@ -1,0 +1,53 @@
+<!--    layout tìm kiếm-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/LinearLayoutHorizontalBasic">
+    <LinearLayout
+        style="@style/LinearLayoutHorizontalBasic"
+        android:paddingLeft="@dimen/d18dp"
+        android:paddingBottom="@dimen/d15dp">
+        <LinearLayout
+            android:layout_height="@dimen/d40dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_search_box">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:paddingLeft="@dimen/d8dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/edtSearchItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/d15sp"
+                    android:textStyle="italic"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/label_search"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/ibSearchItem"
+                    android:layout_width="@dimen/d36dp"
+                    android:layout_height="@dimen/d36dp"
+                    android:background="@drawable/ic_search" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivExitChooseDialog"
+            style="@style/ImageButtonBasic"
+            android:layout_marginLeft="@dimen/d8dp"
+            android:layout_marginRight="@dimen/d8dp"
+            android:src="@drawable/ic_close"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+</LinearLayout>

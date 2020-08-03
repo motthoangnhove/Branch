@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:checked="true"
+            android:id="@+id/nav_season"
+            app:actionLayout="@layout/menu_item_season"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+
+        <item
+            android:id="@+id/nav_planting_area"
+            app:actionLayout="@layout/menu_item_planting_area"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+
+        <item
+            android:id="@+id/nav_seeds"
+            app:actionLayout="@layout/menu_item_seeds"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+
+        <item
+            android:id="@+id/nav_warehouse_supplies"
+            app:actionLayout="@layout/menu_item_warehouse_supplies"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+    </group>
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_devices"
+            app:actionLayout="@layout/menu_item_devices"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+
+        <item
+            android:id="@+id/nav_contract"
+            app:actionLayout="@layout/menu_item_contract"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+        <item
+            android:id="@+id/nav_notification"
+            app:actionLayout="@layout/menu_item_notification"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_account"
+            app:actionLayout="@layout/menu_item_account"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+
+        <item
+            android:id="@+id/nav_feed_back"
+            app:actionLayout="@layout/menu_item_feed_back"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+
+        <item
+            android:id="@+id/nav_sign_out"
+            app:actionLayout="@layout/menu_item_sign_out"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle"/>
+    </group>
+</menu>

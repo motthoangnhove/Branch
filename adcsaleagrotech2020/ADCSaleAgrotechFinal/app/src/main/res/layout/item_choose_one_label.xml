@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerChooseOneLabel"
+    style="@style/LinearLayoutVerticalBasic">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d60dp"
+        android:paddingLeft="@dimen/d9dp"
+        android:paddingRight="@dimen/d12dp"
+        android:background="@color/dFFFFFF"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tvTitleChooseOneLabel"
+            style="@style/TextRobotoRegularBasic"
+            android:text="Toàn Quốc"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1dp"
+        android:background="@color/dF2F2F2"
+        />
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item lịch sử-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalBasic"
+    android:paddingStart="@dimen/d18dp"
+    android:paddingEnd="@dimen/d18dp"
+    android:paddingBottom="@dimen/d10dp">
+
+    <LinearLayout
+        style="@style/LinearLayoutHorizontalBasic">
+
+        <RelativeLayout
+            android:layout_width="@dimen/d45dp"
+            android:layout_height="@dimen/d45dp"
+            android:layout_marginTop="@dimen/d30dp"
+            android:layout_marginEnd="@dimen/d10dp"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civAvatar"
+                android:layout_width="@dimen/d35dp"
+                android:layout_height="@dimen/d35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_gray_avatar_background_dialog"/>
+            <TextView
+                android:id="@+id/tvAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dFFFFFF"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/d17sp"
+                style="@style/fontRobotoBold"
+                android:text="TQ"/>
+        </RelativeLayout>
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic">
+
+            <TextView
+                android:id="@+id/tvCreatorName"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_marginTop="@dimen/d33dp"
+                android:text="Nguyễn Văn An"/>
+
+            <TextView
+                android:id="@+id/tvCreatedTime"
+                style="@style/TextRobotoRegularBasic"
+                android:lineHeight="@dimen/d16sp"
+                android:text="14/02/2020 15:30"
+                android:textColor="@color/dBDBDBD"
+                android:textSize="@dimen/d14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAction"
+        style="@style/TextRobotoRegularBasic"
+        android:text="Xuất kho"
+        android:layout_marginStart="@dimen/d56dp"
+        android:layout_marginTop="@dimen/d15dp"
+        android:textColor="@color/d7A7F83" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        style="@style/TextRobotoRegularBasic"
+        android:text="Không đủ hàng xuất kho một phần"
+        android:layout_marginStart="@dimen/d56dp"
+        android:layout_marginTop="@dimen/d15dp" />
+</LinearLayout>

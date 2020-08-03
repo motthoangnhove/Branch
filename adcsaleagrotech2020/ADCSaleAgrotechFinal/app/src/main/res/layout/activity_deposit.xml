@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><!--màn hình phiếu nộp tiền và chi tiết phiếu nộp tiền-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="deposit"
+            type="com.adcvn.adcsaleagrotech.action.activity.deposit.middleinterface.IDepositActivityViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/dFFFFFF"
+        tools:context=".action.activity.deposit.DepositActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d70dp"
+            android:scrollbars="none">
+
+            <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:paddingLeft="@dimen/d18dp"
+                    android:paddingTop="@dimen/d30dp"
+                    android:paddingRight="@dimen/d18dp">
+
+                    <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:text="@string/label_title_person_payment" />
+
+                        <TextView
+                            android:id="@+id/tvNameUser"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_marginTop="@dimen/d15dp"
+                            android:text="Nguyễn Trung Quân" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVerticalBasic"
+                        android:paddingTop="@dimen/d30dp">
+
+                        <LinearLayout
+                            android:id="@+id/lyContainerBankChoose"
+                            style="@style/LinearLayoutVerticalBasic"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                style="@style/TextRobotoLightBasic"
+                                android:layout_centerVertical="true"
+                                android:text="@string/label_title_bank" />
+
+                            <RelativeLayout
+                                android:id="@+id/lyContainerBank"
+                                style="@style/LinearLayoutVerticalBasic"
+                                android:enabled="false">
+
+                                <TextView
+                                    android:id="@+id/tvBankName"
+                                    style="@style/TextRobotoRegularBasic"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/d15dp"
+                                    android:text="Ngân hàng Sacombank" />
+
+                                <ImageView
+                                    android:id="@+id/ivChooseBank"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/d10dp"
+                                    android:paddingTop="@dimen/d10dp"
+                                    android:paddingBottom="@dimen/d10dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_next_gray2"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/tvAccountName"
+                                style="@style/TextRobotoRegularBasic"
+                                android:layout_marginTop="@dimen/d10dp"
+                                android:text="Tên TK: CONG TY TNHH ADC" />
+
+                            <TextView
+                                android:id="@+id/tvAccountNumber"
+                                style="@style/TextRobotoRegularBasic"
+                                android:layout_marginTop="@dimen/d15dp"
+                                android:text="STK: 0001 678 678" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:text="@string/label_title_number_money_pay" />
+
+                    <EditText
+                        android:id="@+id/edtAmountPayment"
+                        style="@style/TextRobotoMediumBasic"
+                        android:layout_marginTop="@dimen/d6dp"
+                        android:background="@android:color/transparent"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="22.234.433"
+                        android:textColor="@color/d00A850"
+                        android:textSize="@dimen/d20sp" />
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVerticalBasic"
+                        android:paddingTop="@dimen/d19dp"
+                        android:paddingBottom="@dimen/d40dp">
+
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:text="@string/label_title_image" />
+
+                        <RelativeLayout
+                            style="@style/RelativeLayoutBasic"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/d15dp">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/rvImage"
+                                app:riv_corner_radius="@dimen/d15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/ic_image_default"
+                                android:enabled="false"
+                                android:scaleType="fitXY"
+                                app:riv_mutate_background="true" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/btnPayment"
+                            style="@style/ButtonBasic"
+                            android:layout_marginStart="@dimen/d30dp"
+                            android:layout_marginTop="@dimen/d50dp"
+                            android:layout_marginEnd="@dimen/d30dp"
+                            android:background="@drawable/bg_button_action"
+                            android:text="@string/label_title_filed_complete"
+                            android:textAllCaps="false"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tvStatusPaymentComplete"
+                            style="@style/TextRobotoLightBasic"
+                            android:layout_marginTop="@dimen/d43dp"
+                            android:layout_marginBottom="@dimen/d26dp"
+                            android:drawableStart="@drawable/ic_check"
+                            android:drawablePadding="@dimen/d9dp"
+                            android:text="Đã nộp lúc 4:34 PM 23/12/2019"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+            <RelativeLayout style="@style/RelativeLayoutBasic">
+
+                <ImageButton
+                    android:id="@+id/ibBack"
+                    style="@style/ImageButtonBasic" />
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    style="@style/TextTitleHeaderCenter"
+                    android:text="@string/label_title_payment_slip" />
+            </RelativeLayout>
+
+            <include layout="@layout/header_bottom_shadow" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

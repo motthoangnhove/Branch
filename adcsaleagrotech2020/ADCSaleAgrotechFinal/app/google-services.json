@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "864647906136",
+    "firebase_url": "https://adc-sale.firebaseio.com",
+    "project_id": "adc-sale",
+    "storage_bucket": "adc-sale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864647906136:android:c916b572800017a84a1b2d",
+        "android_client_info": {
+          "package_name": "com.adcvn.adcsaleagrotech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864647906136-91olvai9qaa12kufcbs9901d7ct88v2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVXn5xGGvE9XiweoutOhxJgzaTyShEXy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864647906136-91olvai9qaa12kufcbs9901d7ct88v2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

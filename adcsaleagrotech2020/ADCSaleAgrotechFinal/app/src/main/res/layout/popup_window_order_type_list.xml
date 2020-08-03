@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--menu đơn hàng-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalBasic"
+    android:background="@drawable/bg_popup_window_dialog_bottom"
+    android:paddingStart="@dimen/d18dp"
+    android:paddingEnd="@dimen/d8dp"
+    android:paddingBottom="@dimen/d15dp">
+
+    <View
+        android:id="@+id/vTop"
+        android:layout_width="@dimen/d200dp"
+        android:layout_height="@dimen/d36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_bg_header_filter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrderTypeList"
+        android:layout_marginTop="@dimen/d15dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d330dp"
+        android:layout_below="@id/vTop" />
+</RelativeLayout>

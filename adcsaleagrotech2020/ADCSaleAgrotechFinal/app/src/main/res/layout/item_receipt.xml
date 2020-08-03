@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item phiếu thu-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalBasic"
+    android:paddingTop="@dimen/d15dp">
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic"
+        android:layout_marginStart="@dimen/d18dp"
+        android:layout_marginEnd="@dimen/d18dp">
+        <TextView
+            android:id="@+id/tvCompanyName"
+            style="@style/TextRobotoRegularBasic"
+            android:text="Hộ Kinh Doanh Cửa Hàng Vật Tư Nông Nghiệp Thanh Quang" />
+
+        <RelativeLayout
+            style="@style/RelativeLayoutBasic"
+            android:layout_marginTop="@dimen/d15dp">
+
+            <TextView
+                android:id="@+id/tvReceipNumber"
+                style="@style/TextRobotoRegularBasic"
+                android:textColor="@color/d7A7F83"
+                android:text="#PN00023"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/TextRobotoMediumBasic"
+                android:textColor="@color/d7A7F83"
+                android:gravity="end"
+                android:text="15/04/2020"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/RelativeLayoutBasic"
+            android:layout_marginTop="@dimen/d8dp">
+
+            <TextView
+                android:id="@+id/tvStatusReceipt"
+                style="@style/TextRobotoMediumBasic"
+                android:layout_width="@dimen/d120dp"
+                android:gravity="center"
+                android:background="@drawable/ic_bg_status_receipt_green"
+                android:text="Đã thu"/>
+            <TextView
+                android:id="@+id/tvTotalReceipt"
+                style="@style/TextRobotoMediumBasic"
+                android:gravity="end"
+                android:text="43.234.230"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d05dp"
+        android:layout_marginTop="@dimen/d14dp"
+        android:background="@color/dD5D5D5" />
+</LinearLayout>

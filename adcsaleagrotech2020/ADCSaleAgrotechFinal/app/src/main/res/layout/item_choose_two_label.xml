@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerChooseTwoLabel"
+    style="@style/LinearLayoutVerticalBasic">
+    <LinearLayout style="@style/LinearLayoutHorizontalBasic"
+        android:layout_marginTop="@dimen/d16dp">
+            <RelativeLayout
+                android:layout_width="@dimen/d45dp"
+                android:layout_height="@dimen/d45dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civAvatar"
+                    android:layout_width="@dimen/d45dp"
+                    android:layout_height="@dimen/d45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_gray_avatar_background_dialog" />
+                <TextView
+                    android:id="@+id/tvTitleChooseFirstLabel"
+                    style="@style/TextAvatarName"
+                    android:text="TQ" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvTitleChooseSecondLabel"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d10dp"
+                android:text="Nguyễn Trung Quân"/>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1dp"
+        android:layout_marginTop="@dimen/d16dp"
+        android:background="@color/dF2F2F2" />
+</LinearLayout>

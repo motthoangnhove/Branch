@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?><!--item sản phẩm-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyProductItem"
+    style="@style/LinearLayoutVerticalBasic">
+
+    <LinearLayout
+        style="@style/LinearLayoutHorizontalBasic"
+        android:layout_marginStart="@dimen/d18dp"
+        android:layout_marginTop="@dimen/d20dp"
+        android:layout_marginEnd="@dimen/d18dp"
+        android:layout_marginBottom="@dimen/d15dp">
+
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/d10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civImageProduct"
+                android:layout_width="@dimen/d55dp"
+                android:layout_height="@dimen/d55dp"
+                android:background="@drawable/ic_image_product_default" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                style="@style/TextRobotoRegularBasic"
+                android:text="Help 400SC 240ml" />
+            <TextView
+                android:id="@+id/tvProductUses"
+                style="@style/TextRobotoRegularBasic"
+                android:textSize="@dimen/d16dp"
+                android:textColor="@color/d7A7F83"
+                android:layout_marginTop="@dimen/d5dp"
+                android:text="Thuốc trừ bệnh" />
+
+            <RelativeLayout
+                style="@style/RelativeLayoutBasic"
+                android:layout_marginTop="@dimen/d15dp">
+
+                <TextView
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_alignParentEnd="false"
+                    android:drawableStart="@drawable/ic_usd"
+                    android:drawablePadding="@dimen/d5dp"
+                    android:textSize="@dimen/d16dp"
+                    android:text="Giá bán" />
+
+                <TextView
+                    android:id="@+id/tvUnitPrice"
+                    style="@style/TextRobotoRegularBasic"
+                    android:gravity="end"
+                    android:textSize="@dimen/d16dp"
+                    android:text="43.234.230đ / Chai" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d5dp"
+            android:background="@color/dF1F0F5" />
+    </LinearLayout>

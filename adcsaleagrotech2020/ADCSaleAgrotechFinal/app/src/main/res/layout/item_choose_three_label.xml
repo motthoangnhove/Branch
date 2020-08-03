@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerChooseThreeLabel"
+    style="@style/LinearLayoutVerticalBasic">
+    <LinearLayout
+        style="@style/rowChooseDialog"
+        android:background="@color/dFFFFFF"
+        android:paddingStart="@dimen/d9dp"
+        android:paddingTop="@dimen/d20dp"
+        android:paddingEnd="@dimen/d12dp">
+
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic">
+
+            <TextView
+                android:id="@+id/tvTitleChooseFirstLabel"
+                style="@style/TextRobotoRegularBasic"
+                android:text="Sacombank" />
+
+            <TextView
+                android:id="@+id/tvTitleChooseSecondLabel"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_marginTop="@dimen/d15dp"
+                android:text="Tên TK: CT NONG NGHIEP MAT TROI VANG"
+                android:textColor="@color/d7A7F83" />
+
+            <TextView
+                android:id="@+id/tvTitleChooseThirdLabel"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_marginTop="@dimen/d10dp"
+                android:text="STK: 0001 678 678"
+                android:textColor="@color/d7A7F83" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1dp"
+        android:background="@color/dF2F2F2" />
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?><!--màn hình tạo phiếu thu và chi tiết phiếu thu-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="receivableActivity"
+            type="com.adcvn.adcsaleagrotech.action.activity.receivableactivity.middleinterface.IReceivableActivityViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/dFFFFFF">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d70dp">
+
+            <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:layout_marginTop="@dimen/d30dp"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingEnd="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d35dp">
+
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/label_text_payer" />
+
+                    <TextView
+                        android:id="@+id/tvPayer"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_marginTop="@dimen/d15dp"
+                        android:text="Hộ Kinh Doanh Cửa Hàng Vật Tư Nông Nghiệp Thanh Quang" />
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:text="@string/label_text_address" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_marginTop="@dimen/d15dp"
+                        android:lines="3"
+                        android:text="Số nhà 191, ấp Tấn Lộc, xã Lâm Tân, huyện Thành Trị, tỉnh Sóc Trăng" />
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:text="@string/label_text_contacts" />
+
+                    <TextView
+                        android:id="@+id/tvContactName"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_marginTop="@dimen/d18dp"
+                        android:drawableStart="@drawable/ic_contacts_name"
+                        android:drawablePadding="@dimen/d14dp" />
+
+                    <br.com.sapereaude.maskedEditText.MaskedEditText
+                        android:id="@+id/mEdContactPhone"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_marginTop="@dimen/d15dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_contacts_phone"
+                        android:drawablePadding="@dimen/d14dp"
+                        android:enabled="false"
+                        mask:mask="#### ### ###" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d5dp"
+                    android:background="@color/dF1F0F5" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:layout_marginTop="@dimen/d21dp"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingEnd="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d27dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_width="wrap_content"
+                        android:drawableEnd="@drawable/ic_reason"
+                        android:gravity="center"
+                        android:text="@string/label_text_reason" />
+
+                    <TextView
+                        android:id="@+id/tvReason"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_marginTop="@dimen/d5dp"
+                        android:gravity="center_vertical"
+                        android:minLines="2"
+                        android:text="Thu tiền bán hàng ĐH003" />
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:text="@string/label_text_amount" />
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        style="@style/TextRobotoMediumBasic"
+                        android:layout_marginTop="@dimen/d15dp"
+                        android:text="40.000.000"
+                        android:textSize="@dimen/d20sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d5dp"
+                    android:background="@color/dF1F0F5" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingTop="@dimen/d30dp"
+                    android:paddingEnd="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d40dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/label_text_proceeds" />
+
+                    <EditText
+                        android:id="@+id/edtProceeds"
+                        style="@style/TextRobotoMediumBasic"
+                        android:layout_marginTop="@dimen/d6dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="40.000.000"
+                        android:textColor="@color/d00A850"
+                        android:textSize="@dimen/d20sp" />
+
+                    <Button
+                        android:id="@+id/btnCollected"
+                        style="@style/ButtonBasic"
+                        android:layout_marginStart="@dimen/d30dp"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:layout_marginEnd="@dimen/d30dp"
+                        android:text="@string/label_text_collected" />
+
+                    <Button
+                        android:id="@+id/btnReceiptRequest"
+                        style="@style/ButtonBasic"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/d30dp"
+                        android:layout_marginTop="@dimen/d5dp"
+                        android:layout_marginEnd="@dimen/d30dp"
+                        android:background="@drawable/bg_button_action2"
+                        android:text="Yêu cầu thu hộ"
+                        android:textColor="@color/d7A7F83" />
+
+                    <Button
+                        android:id="@+id/btnTransferCustomer"
+                        style="@style/ButtonBasic"
+                        android:layout_marginStart="@dimen/d30dp"
+                        android:layout_marginTop="@dimen/d20dp"
+                        android:layout_marginEnd="@dimen/d30dp"
+                        android:background="@android:color/transparent"
+                        android:text="@string/label_text_bank_transfer_customers"
+                        android:textColor="@color/d2F80ED"
+                        android:textSize="@dimen/d17sp" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_marginTop="@dimen/d36dp"
+                        android:drawableStart="@drawable/ic_check"
+                        android:drawablePadding="@dimen/d6dp"
+                        android:text="Đã thu lúc 3:34 PM 12/03/2020"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+
+            <RelativeLayout
+                style="@style/RelativeLayoutBasic"
+                android:paddingStart="@dimen/d9dp"
+                android:paddingEnd="@dimen/d18dp">
+
+                <ImageButton
+                    android:id="@+id/ibBack"
+                    style="@style/ImageButtonBasic"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    style="@style/TextTitleHeaderCenter"
+                    android:text="@string/label_title_receipt_detail" />
+
+                <ImageButton
+                    android:id="@+id/ibPhoto"
+                    style="@style/ImageButtonBasic"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/ic_camera"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <include layout="@layout/header_bottom_shadow" />
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

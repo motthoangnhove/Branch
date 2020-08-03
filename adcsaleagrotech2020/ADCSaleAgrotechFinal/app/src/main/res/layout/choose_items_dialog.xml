@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dFFFFFF"
+    android:minHeight="@dimen/d1000dp"
+    android:minWidth="@dimen/d335dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListChoose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d70dp"
+        android:paddingLeft="@dimen/d18dp"
+        android:paddingRight="@dimen/d18dp" />
+
+    <LinearLayout style="@style/LinearLayoutVerticalBasic"
+        android:paddingTop="@dimen/d15dp">
+
+        <include layout="@layout/layout_box_search_dialog" />
+
+        <include layout="@layout/header_bottom_shadow" />
+    </LinearLayout>
+</FrameLayout>

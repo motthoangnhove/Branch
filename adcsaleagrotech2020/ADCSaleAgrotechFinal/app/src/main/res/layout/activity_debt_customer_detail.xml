@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--màn hình chi tiết công nợ-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="debtCustomerDetail"
+            type="com.adcvn.adcsaleagrotech.action.activity.debtcustomerdetail.middleinterface.IDebtCustomerDetail"/>
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dFFFFFF">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/alTabHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:background="@color/dFFFFFF">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dFFFFFF"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="@dimen/d65dp"
+                            android:layout_height="@dimen/d65dp"
+                            android:layout_marginTop="@dimen/d18dp"
+                            android:layout_marginEnd="@dimen/d10dp"
+                            android:layout_marginStart="@dimen/d20dp"
+                            android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="@dimen/d65dp"
+                            android:layout_height="@dimen/d65dp"
+                            android:background="@drawable/ic_green_avatar_background_dialog"/>
+                        <TextView
+                            android:id="@+id/tvAvatar"
+                            style="@style/TextAvatarName"
+                            android:text="TQ" />
+                        </RelativeLayout>
+                        <TextView
+                            style="@style/TextRobotoMediumBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d10dp"
+                            android:textSize="@dimen/d19sp"
+                            android:text="Nguyễn Thanh Quang"/>
+                        <TextView
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d10dp"
+                            android:textSize="@dimen/d15sp"
+                            android:text="Số nhà 191, ấp Tân Lộc"/>
+                        <TextView
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d10dp"
+                            android:textSize="@dimen/d15sp"
+                            android:text="Số nhà 191, ấp Tân Lộc Lâm Tân"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d10dp"
+                            android:orientation="horizontal"
+                            >
+                           <ImageButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/ic_call"/>
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_send_message"/>
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_direct"/>
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ic_send_email"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d36dp"
+                android:layout_marginTop="@dimen/d70dp"
+                app:tabPaddingBottom="-1dp"
+                app:tabPaddingEnd="-1dp"
+                app:tabPaddingStart="-1dp"
+                app:tabPaddingTop="-1dp"
+                app:tabBackground="@color/dFFFFFF"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/dFFFFFF"
+                app:tabMode="fixed">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tiInfoDebtCustomer"
+                    style="@style/tabDebtCustomerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/tab_info_debt_customer" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tiDebtCustomer"
+                    style="@style/tabDebtCustomerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/tab_debt_customer" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tiContractDebtCustomer"
+                    style="@style/tabDebtCustomerItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout="@layout/tab_contract_customer" />
+            </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:orientation="vertical">
+                <include layout="@layout/header_bottom_shadow"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/d18dp"
+                    android:paddingRight="@dimen/d18dp">
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout style="@style/LinearLayoutVerticalBasic">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/d9dp">
+
+            <ImageButton
+                android:id="@+id/ibBack"
+                style="@style/ImageButtonBasic" />
+
+            <TextView
+                android:id="@+id/tvTitelOrderDetail"
+                style="@style/TextTitleHeaderCenter"/>
+            <ImageButton
+                android:id="@+id/ibMenu"
+                style="@style/ImageButtonBasic"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_more" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+</layout>

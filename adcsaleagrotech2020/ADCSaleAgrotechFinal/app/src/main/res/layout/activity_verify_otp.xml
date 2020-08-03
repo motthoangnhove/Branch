@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!--màn hình xác thực OTP-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="verifyOtp"
+            type="com.adcvn.adcsaleagrotech.action.activity.verifyotp.middleinterface.IVerifyOtpViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/dFFFFFF">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/d70dp"
+            style="@style/LinearLayoutVerticalBasic"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d50dp"
+                android:background="@drawable/ic_phone"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d20dp"
+                android:paddingLeft="@dimen/d18dp"
+                android:paddingTop="@dimen/d20dp"
+                android:paddingRight="@dimen/d18dp">
+
+                <TextView
+                    style="@style/TextTitleBasic"
+                    android:text="@string/verify_phone_number"
+                    android:textSize="@dimen/d22sp" />
+
+
+                <TextView
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_marginTop="@dimen/d18dp"
+                    android:text="Chúng tôi đã gửi mã xác thực đến số điện thoại của bạn" />
+
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_marginTop="@dimen/d13dp"
+                    android:text="Đã gửi đến 0919-456-789"
+                    android:textColor="@color/d00A850"
+                    android:textSize="@dimen/d18sp" />
+
+                <TextView
+                    style="@style/TextRobotoLightBasic"
+                    android:layout_marginTop="@dimen/d46dp"
+                    android:text="@string/verify_code"
+                    android:textSize="@dimen/d18sp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextCode"
+                    style="@style/TextRobotoRegularBasic"
+                    android:layout_marginTop="@dimen/d10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/label_title_hint_enter_code_verify"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:textColor="@color/d383F45"
+                    android:textColorHint="@color/dD5D5D5">
+
+                    <requestFocus />
+                </com.google.android.material.textfield.TextInputEditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1dp"
+                    android:layout_marginTop="@dimen/d12dp"
+                    android:background="@color/d14AC69" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnVerifyCode"
+                style="@style/ButtonBasic"
+                android:layout_height="@dimen/d60dp"
+                android:layout_marginStart="@dimen/d53dp"
+                android:layout_marginTop="@dimen/d59dp"
+                android:layout_marginEnd="@dimen/d53dp"
+                android:text="@string/confirm" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic"
+            android:background="@android:color/white"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout style="@style/RelativeLayoutBasic">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    style="@style/ImageButtonBasic"
+                    android:layout_marginStart="@dimen/d8dp"
+                    android:layout_marginTop="@dimen/d15dp"
+                    android:src="@drawable/ic_close"
+                    tools:ignore="ContentDescription,RtlCompat,UnusedAttribute" />
+
+                <TextView
+                    style="@style/TextTitleHeaderCenter"
+                    android:text="@string/verify" />
+            </RelativeLayout>
+
+            <include layout="@layout/header_bottom_shadow" />
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

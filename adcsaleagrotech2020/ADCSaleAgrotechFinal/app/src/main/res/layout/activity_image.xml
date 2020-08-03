@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--màn hình hình ảnh-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@color/dFFFFFF"
+    tools:context=".action.activity.ImageActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvImages"
+        android:layout_marginTop="@dimen/d70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    style="@style/LinearLayoutVerticalBasic">
+
+    <RelativeLayout
+        style="@style/RelativeLayoutBasic"
+        android:paddingStart="@dimen/d5dp"
+        android:paddingEnd="@dimen/d10dp">
+
+        <ImageButton
+            android:id="@+id/ibClose"
+            style="@style/ImageButtonBasic"
+            app:srcCompat="@drawable/ic_close"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TextTitleHeaderCenter"
+            android:text="@string/label_title_menu_image" />
+
+        <ImageButton
+            android:id="@+id/ibCamera"
+            style="@style/ImageButtonBasic"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_camera"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/header_bottom_shadow" />
+
+</LinearLayout>
+</FrameLayout>

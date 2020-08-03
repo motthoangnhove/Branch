@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic"
+        android:background="@color/d00A850"
+        android:paddingStart="@dimen/d25dp"
+        android:paddingTop="@dimen/d19dp"
+        android:paddingBottom="@dimen/d16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start date"
+            android:textColor="@color/dFFFFFF"
+            android:textSize="@dimen/d14sp" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020"
+            android:textColor="#ABFFFFFF"
+            android:textSize="@dimen/d14sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thu, Apr 13"
+            android:textAllCaps="false"
+            android:textColor="@color/dFFFFFF"
+            android:textSize="@dimen/d34sp" />
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

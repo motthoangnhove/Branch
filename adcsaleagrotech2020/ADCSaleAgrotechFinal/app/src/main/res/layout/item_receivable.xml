@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item phải thu-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyReceivableChild"
+    style="@style/LinearLayoutHorizontalBasic"
+    android:layout_marginTop="@dimen/d15dp"
+    android:layout_marginStart="@dimen/d18dp"
+    android:layout_marginEnd="@dimen/d18dp"
+    android:layout_marginBottom="@dimen/d15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgStatusColor"
+        android:layout_width="@dimen/d10dp"
+        android:layout_height="@dimen/d10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="@dimen/d8dp"
+        android:src="@color/dFFAB36" />
+
+    <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+        <TextView
+            android:id="@+id/tvCompanyName"
+            style="@style/TextRobotoRegularBasic"
+            android:text="Hộ Kinh Doanh Cửa Hàng Vật Tư Nông Nghiệp Thanh Quang" />
+
+        <RelativeLayout
+            style="@style/RelativeLayoutBasic"
+            android:layout_marginTop="@dimen/d10dp">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                style="@style/TextRobotoLightBasic"
+                android:layout_alignParentEnd="false"
+                android:text="Đến hạn" />
+
+            <TextView
+                android:id="@+id/tvTotalReceivable"
+                style="@style/TextRobotoMediumBasic"
+                android:layout_alignParentEnd="false"
+                android:gravity="end"
+                android:text="43.234.230" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

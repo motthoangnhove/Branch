@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--màn hình dialog công nợ-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SizeDefaultDialogChoose"
+    android:background="@drawable/border_radius_view_white">
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextTitleBasic"
+        android:layout_gravity="center"
+        android:text="@string/label_title_debit" />
+
+    <RelativeLayout
+        style="@style/RelativeLayoutDebtInfo">
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:text="ĐMCN" />
+
+        <TextView
+            android:id="@+id/tvMaximizeDebtAmount"
+            style="@style/TextDebtInfoLeft"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/RelativeLayoutDebtInfo">
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:text="Tổng nợ" />
+
+        <TextView
+            android:id="@+id/tvDebitAmount"
+            style="@style/TextDebtInfoLeft"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/RelativeLayoutDebtInfo">
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:text="Nợ quá hạn" />
+
+        <TextView
+            android:id="@+id/tvOverdueAmount"
+            style="@style/TextDebtInfoLeft"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/RelativeLayoutDebtInfo">
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:text="Đang đặt hàng" />
+
+        <TextView
+            android:id="@+id/tvInprocessAmount"
+            style="@style/TextDebtInfoLeft"
+            android:text="0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1dp"
+        android:layout_marginTop="@dimen/d16dp"
+        android:background="@color/dD5D5D5" />
+
+    <RelativeLayout
+        style="@style/RelativeLayoutDebtInfo">
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:text="Hạn mức còn lại"
+            android:textColor="@color/d383F45" />
+
+        <TextView
+            android:id="@+id/tvRemainingAmount"
+            style="@style/TextDebtInfoLeft"
+            android:text="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/RelativeLayoutDebtInfo">
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:text="Tình trạng"
+            android:textColor="@color/d383F45" />
+
+        <TextView
+            android:id="@+id/tvDebitStatusNormal"
+            style="@style/TextDebtInfoLeft"
+            android:drawableEnd="@drawable/ic_done"
+            android:drawablePadding="@dimen/d5dp"
+            android:textColor="@color/d00A850"
+            android:visibility="gone"  />
+
+        <TextView
+            android:id="@+id/tvDebitStatusDebt"
+            style="@style/TextDebtInfoLeft"
+            android:drawableEnd="@drawable/ic_circle_around_close_red"
+            android:drawablePadding="@dimen/d5dp"
+            android:textColor="@color/dEF1C23"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnExit"
+        style="@style/ButtonBasic"
+        android:layout_width="@dimen/d100dp"
+        android:layout_height="@dimen/d33dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/d30dp"
+        android:background="@drawable/bg_button_exit"
+        android:gravity="center"
+        android:text="Thoát" />
+</LinearLayout>

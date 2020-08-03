@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item hình ảnh-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/LinearLayoutVerticalBasic"
+    android:paddingStart="@dimen/d18dp"
+    android:paddingEnd="@dimen/d18dp"
+    android:paddingBottom="@dimen/d10dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/LinearLayoutHorizontalBasic"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAvatar"
+            style="@style/TextAvatarName"
+            android:layout_width="@dimen/d45dp"
+            android:layout_height="@dimen/d45dp"
+            android:layout_marginTop="@dimen/d20dp"
+            android:layout_marginEnd="@dimen/d10dp"
+            android:layout_marginBottom="@dimen/d15dp"
+            android:background="@drawable/bg_eclipse"
+            android:gravity="center"
+            android:text="DU" />
+
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic"
+            android:layout_marginTop="@dimen/d23dp">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                style="@style/TextRobotoRegularBasic"
+                android:text="Demo User" />
+
+            <TextView
+                android:id="@+id/tvCreatorDate"
+                style="@style/TextRobotoRegularBasic"
+                android:text="14/02/2020 15:30"
+                android:textColor="@color/d7A7F83"
+                android:textSize="@dimen/d16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        style="@style/ImageBasic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1.569:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

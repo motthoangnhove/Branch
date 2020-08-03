@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyProductDetail"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".action.activity.ProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dFFFFFF"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15dp"
+                android:paddingStart="@dimen/d9dp">
+
+                <ImageButton
+                    android:id="@+id/ibBack"
+                    style="@style/ImageButtonBasic"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    style="@style/TextRobotoLightBasic"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Thuốc trừ bệnh"
+                    android:textColor="@color/d383F45"
+                    android:textSize="@dimen/d21sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvProductName"
+                style="@style/TextRobotoMediumBasic"
+                android:layout_marginTop="@dimen/d2dp"
+                android:gravity="center"
+                android:text="Help 400SC"
+                android:textColor="@color/d00A850"
+                android:textSize="@dimen/d32sp" />
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="@dimen/d200dp"
+                android:layout_height="@dimen/d126dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d45dp"
+                android:src="@drawable/ic_image_help" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d48dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d30dp">
+
+
+                <TextView
+                    style="@style/TextRobotoMediumBasic"
+                    android:text="@string/label_text_product_info"
+                    android:textColor="@color/d01A8A9"
+                    android:textSize="@dimen/d20sp" />
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutBasic"
+                    android:layout_marginTop="@dimen/d20dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/label_text_price" />
+
+                    <LinearLayout
+                        style="@style/LinearLayoutHorizontalBasic"
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/tvPriceFirst"
+                            style="@style/TextRobotoMediumBasic"
+                            android:layout_width="wrap_content"
+                            android:text="306.000đ" />
+
+                        <TextView
+                            android:id="@+id/tvUnitFirst"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="wrap_content"
+                            android:text=" / Chai" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontalBasic"
+                    android:layout_marginTop="@dimen/d15dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPriceSecond"
+                        style="@style/TextRobotoMediumBasic"
+                        android:layout_width="wrap_content"
+                        android:text="23.306.000đ" />
+
+                    <TextView
+                        android:id="@+id/tvUnitSecond"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_width="wrap_content"
+                        android:text=" / Thùng" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutBasic"
+                    android:layout_marginTop="@dimen/d30dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/label_text_specifications" />
+
+                    <TextView
+                        android:id="@+id/tvSpecifications"
+                        style="@style/TextRobotoRegularBasic"
+                        android:gravity="end"
+                        android:text="Thùng x 40 chai 250ml" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutBasic"
+                    android:layout_marginTop="@dimen/d30dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/label_text_expiry_date" />
+
+                    <TextView
+                        android:id="@+id/tvExpiryDate"
+                        style="@style/TextRobotoRegularBasic"
+                        android:gravity="end"
+                        android:text="2 năm" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d5dp"
+                android:background="@color/dF1F0F5" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d25dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d30dp">
+
+
+                <TextView
+                    style="@style/TextRobotoMediumBasic"
+                    android:text="@string/label_text_ingredients"
+                    android:textColor="@color/d01A8A9"
+                    android:textSize="@dimen/d20sp" />
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutBasic"
+                    android:layout_marginTop="@dimen/d20dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="Azoxystrobin" />
+
+                    <TextView
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="250g / lít" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutBasic"
+                    android:layout_marginTop="@dimen/d20dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="Difenoconazole" />
+
+                    <TextView
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="150g / lít" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutBasic"
+                    android:layout_marginTop="@dimen/d20dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="Phụ gia" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d5dp"
+                android:background="@color/dF1F0F5" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d25dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d30dp">
+
+                <TextView
+                    style="@style/TextRobotoMediumBasic"
+                    android:text="@string/label_text_effect"
+                    android:textColor="@color/d01A8A9"
+                    android:textSize="@dimen/d20sp" />
+
+                <RelativeLayout
+                    style="@style/RelativeLayoutBasic"
+                    android:layout_marginTop="@dimen/d20dp">
+
+                    <TextView
+                        android:id="@+id/tvEffect"
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/body_text_effect" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d5dp"
+                android:background="@color/dF1F0F5" />
+
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_marginTop="@dimen/d25dp"
+                android:paddingStart="@dimen/d18dp"
+                android:paddingEnd="@dimen/d18dp"
+                android:paddingBottom="@dimen/d30dp">
+
+
+                <TextView
+                    style="@style/TextRobotoMediumBasic"
+                    android:text="Hướng dẫn sử dụng"
+                    android:textColor="@color/d01A8A9"
+                    android:textSize="@dimen/d20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

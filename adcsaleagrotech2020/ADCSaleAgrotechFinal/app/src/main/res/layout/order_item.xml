@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item đơn hàng-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyContainerOrder"
+    style="@style/LinearLayoutVerticalBasic"
+    android:paddingBottom="@dimen/d5dp"
+    android:background="@color/dF1F0F5">
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic"
+        android:paddingTop="@dimen/d15dp"
+        android:paddingLeft="@dimen/d18dp"
+        android:paddingRight="@dimen/d18dp"
+        android:paddingBottom="@dimen/d15dp"
+        android:background="@color/dFFFFFF">
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic">
+        <TextView
+            android:id="@+id/tvCompanyName"
+            style="@style/TextRobotoRegularBasic"
+            android:text="Hộ Kinh Doanh Cửa Hàng Vật Tư Nông Nghiệp Thanh Quang" />
+
+        <RelativeLayout
+            style="@style/RelativeLayoutBasic"
+            android:layout_marginTop="@dimen/d10dp">
+            <TextView
+                android:id="@+id/tvOrderNumber"
+                style="@style/TextRobotoRegularBasic"
+                android:textColor="@color/d7A7F83"
+                android:text="#PN00023"/>
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/TextRobotoRegularBasic"
+                android:textColor="@color/d7A7F83"
+                android:gravity="end"
+                android:text="15/04/2020"/>
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/tvTotalSalary"
+                style="@style/TextRobotoMediumBasic"
+                android:layout_marginTop="@dimen/d5dp"
+                android:gravity="end"
+                android:text="43.234.230"/>
+        <RelativeLayout
+            style="@style/RelativeLayoutBasic"
+            android:layout_marginTop="@dimen/d5dp">
+            <TextView
+                android:id="@+id/tvStatusOrder"
+                style="@style/TextRobotoRegularBasic"
+                android:textSize="@dimen/d16sp"
+                android:layout_width="@dimen/d120dp"
+                android:textColor="@color/dFFAB36"
+                android:gravity="center"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tvStatusOrderReceipt"
+                style="@style/TextRobotoLightBasic"
+                android:drawablePadding="@dimen/d12dp"
+                android:gravity="end"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

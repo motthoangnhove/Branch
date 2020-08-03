@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--menu thu tiền-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab"
+    style="@style/LinearLayoutVerticalBasic">
+
+    <LinearLayout
+        style="@style/LinearLayoutHorizontalBasic"
+        android:baselineAligned="false"
+        android:paddingTop="@dimen/d4dp"
+        android:paddingBottom="@dimen/d10dp"
+        android:weightSum="3">
+
+        <FrameLayout style="@style/FrameLayoutButtonTabReceivable">
+
+            <TextView
+                android:id="@+id/tvButtonTabReceivable"
+                style="@style/TextButtonTabReceivable"
+                android:background="@drawable/bg_button_tab_receivable_action"
+                android:text="@string/label_tab_receipt"
+                android:textColor="@color/d00A850" />
+        </FrameLayout>
+
+        <FrameLayout style="@style/FrameLayoutButtonTabReceivable">
+
+            <TextView
+                android:id="@+id/tvButtonTabReceipt"
+                style="@style/TextButtonTabReceivable"
+                android:background="@drawable/bg_button_tab_receivable"
+                android:text="Phiếu thu" />
+        </FrameLayout>
+
+        <FrameLayout style="@style/FrameLayoutButtonTabReceivable">
+
+            <TextView
+                android:id="@+id/tvButtonTabDeposit"
+                style="@style/TextButtonTabReceivable"
+                android:background="@drawable/bg_button_tab_receivable"
+                android:text="@string/label_tab_deposit" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <include layout="@layout/header_bottom_shadow" />
+</LinearLayout>

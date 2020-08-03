@@ -1,0 +1,127 @@
+<!--màn hình danh sách thu tiền, nộp tiền-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dFFFFFF">
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic"
+        android:layout_height="match_parent"
+        android:layout_marginTop="51dp">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeReceivable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+            <LinearLayout
+                style="@style/LinearLayoutVerticalBasic"
+                android:layout_height="match_parent">
+
+                <com.cruxlab.sectionedrecyclerview.lib.SectionHeaderLayout
+                    android:id="@+id/shlReceivable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvReceivable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.cruxlab.sectionedrecyclerview.lib.SectionHeaderLayout>
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/lyReceipt"
+            style="@style/LinearLayoutVerticalBasic"
+            android:visibility="visible">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReceipt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsDeposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/lyDeposit"
+                style="@style/LinearLayoutVerticalBasic"
+                android:paddingTop="@dimen/d23dp">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingEnd="@dimen/d18dp">
+
+                    <TextView
+                        style="@style/TextRobotoRegularBasic"
+                        android:drawableStart="@drawable/ic_wallet"
+                        android:drawablePadding="@dimen/d6dp"
+                        android:text="Tiền thu hộ"
+                        android:textColor="@color/d7A7F83" />
+
+                    <RelativeLayout
+                        style="@style/RelativeLayoutBasic"
+                        android:layout_marginTop="@dimen/d9dp"
+                        android:layout_marginBottom="@dimen/d24dp"
+                        android:paddingStart="@dimen/d28dp">
+
+                        <TextView
+                            android:id="@+id/tvWalletTotal"
+                            style="@style/TextRobotoMediumBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="12,153,508"
+                            android:textSize="@dimen/d20sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnCreateDeposit"
+                            style="@style/ButtonBasic"
+                            android:layout_width="@dimen/d120dp"
+                            android:layout_height="@dimen/d36dp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_add_depost" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d5dp"
+                    android:layout_marginBottom="@dimen/d17dp"
+                    android:background="@color/dF1F0F5" />
+
+                <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+                    <TextView
+                        style="@style/TextTitleBasic"
+                        android:paddingStart="@dimen/d18dp"
+                        android:paddingEnd="@dimen/d18dp"
+                        android:paddingBottom="@dimen/d14dp"
+                        android:text="Phiếu nộp tiền" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d05dp"
+                        android:background="@color/dD5D5D5" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvDeposit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/layout_tab_receivable" />
+</FrameLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--màn hình login-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="login"
+            type="com.adcvn.adcsaleagrotech.action.activity.login.middleinterface.ILoginViewModel"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+            <LinearLayout
+                android:layout_marginTop="@dimen/d40dp"
+                style="@style/LinearLayoutVerticalBasic"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/d160dp"
+                    android:layout_height="@dimen/d75dp"
+                    android:background="@drawable/adc_agrotech_background" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/d180dp"
+                style="@style/LinearLayoutVerticalBasic"
+                android:paddingTop="@dimen/d15dp"
+                android:paddingLeft="@dimen/d18dp"
+                android:paddingRight="@dimen/d18dp"
+                android:gravity="center">
+                <TextView
+                    style="@style/TextRobotoLightBasic"
+                    android:text="@string/label_title_phone_number"/>
+
+                <LinearLayout
+                    style="@style/LinearLayoutHorizontalBasic"
+                    android:layout_height="60dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/d45dp"
+                            android:layout_height="@dimen/d30dp"
+                            android:background="@drawable/ic_vn_flag" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="14">
+
+                        <br.com.sapereaude.maskedEditText.MaskedEditText
+                            android:id="@+id/edtVerifyPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/d383F45"
+                            android:inputType="phone"
+                            android:typeface="monospace"
+                            mask:allowed_chars="1234567890"
+                            mask:mask="#### - ### - ###"
+                            android:hint="**********"
+                            app:keep_hint="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2">
+                        <ImageView
+                            android:id="@+id/ivStatusNumberPhone"
+                            android:layout_width="@dimen/d24dp"
+                            android:layout_height="@dimen/d24dp"
+                            android:background="@drawable/ic_warm_input" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="@dimen/d14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d1dp"
+                    android:background="@drawable/ic_rectangle" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/ButtonBasic"
+                android:layout_width="@dimen/d280dp"
+                android:layout_height="@dimen/d60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d60dp"
+                android:text="@string/label_title_login" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

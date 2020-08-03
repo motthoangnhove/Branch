@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutHorizontalBasic"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d23dp">
+    <ImageView
+        android:id="@+id/ivMenuItemSignOut"
+        style="@style/iconMenuItemLeft"
+        android:background="@drawable/ic_sign_out_default" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvLabelMenuItemSignOut"
+        style="@style/labelMenuItemLeft"
+        android:text="@string/label_title_sign_out_dashboard_activity"/>
+</LinearLayout>

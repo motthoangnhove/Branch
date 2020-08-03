@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item thu tiền, ngân hàng-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalBasic"
+    android:paddingTop="@dimen/d15dp">
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic"
+        android:layout_marginStart="@dimen/d18dp"
+        android:layout_marginEnd="@dimen/d18dp">
+        <TextView
+            android:id="@+id/tvBankName"
+            style="@style/TextRobotoRegularBasic"
+            android:text="Ngân hàng Sacombank" />
+
+        <RelativeLayout
+            style="@style/RelativeLayoutBasic"
+            android:layout_marginTop="@dimen/d15dp">
+
+            <TextView
+                android:id="@+id/tvDepositNumber"
+                style="@style/TextRobotoRegularBasic"
+                android:textColor="@color/d7A7F83"
+                android:layout_alignParentEnd="false"
+                android:text="#PN00003"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_alignParentEnd="false"
+                android:textColor="@color/d7A7F83"
+                android:gravity="end"
+                android:text="15/04/2020"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvTotalDeposit"
+            style="@style/TextRobotoMediumBasic"
+            android:layout_alignParentEnd="false"
+            android:gravity="end"
+            android:layout_marginTop="@dimen/d10dp"
+            android:text="43.234.230"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d05dp"
+        android:layout_marginTop="@dimen/d15dp"
+        android:background="@color/dD5D5D5" />
+</LinearLayout>

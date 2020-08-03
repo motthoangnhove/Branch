@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--màn hình thông báo-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dF1F0F5">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNotification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d70dp" />
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic">
+        <RelativeLayout
+            style="@style/RelativeLayoutBasic"
+            android:paddingStart="@dimen/d9dp"
+            android:paddingEnd="@dimen/d18dp"
+            android:background="@color/dFFFFFF">
+
+            <ImageButton
+                android:id="@+id/ibExit"
+                style="@style/ImageButtonBasic"
+                app:srcCompat="@drawable/ic_close"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/TextTitleHeaderCenter"
+                android:text="@string/label_title_notification" />
+
+            <TextView
+                android:id="@+id/tvTotalNotification"
+                style="@style/TextRobotoBoldTitleHeaderRight"
+                android:layout_width="@dimen/d25dp"
+                android:layout_height="@dimen/d25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_background_notification"
+                android:backgroundTintMode="src_over"
+                android:gravity="center"
+                android:lineHeight="@dimen/d13sp"
+                android:text="5"
+                android:textColor="@color/dFFFFFF"
+                android:textSize="@dimen/d11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include layout="@layout/header_bottom_shadow" />
+    </LinearLayout>
+</FrameLayout>

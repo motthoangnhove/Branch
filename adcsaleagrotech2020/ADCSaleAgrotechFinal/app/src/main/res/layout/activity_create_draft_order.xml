@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--màn hình tạo đơn hàng-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="createCraftOrder"
+            type="com.adcvn.adcsaleagrotech.action.activity.createdraftorder.middleinterface.ICreateDraftOrderViewModel"/>
+    </data>
+    <FrameLayout
+        android:layout_height="fill_parent"
+        android:background="@color/dFFFFFF"
+        android:layout_width="fill_parent">
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic">
+
+            <RelativeLayout
+                style="@style/RelativeLayoutBasic"
+                android:paddingStart="@dimen/d5dp">
+
+                <ImageButton
+                    android:id="@+id/ibBack"
+                    style="@style/ImageButtonBasic"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/TextTitleHeaderCenter"
+                    android:text="Tạo đơn hàng" />
+            </RelativeLayout>
+
+            <include layout="@layout/header_bottom_shadow"/>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d70dp"
+            android:scrollbars="none">
+
+            <LinearLayout style="@style/LinearLayoutVerticalBasic">
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:layout_marginTop="@dimen/d30dp"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d35dp">
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/label_title_employee" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvNameEmployee"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="@string/label_title_empty_choose_employee"
+                            android:textColor="@color/d7A7F83"/>
+                        <LinearLayout
+                            android:id="@+id/lyContainerChooseEmployee"
+                            android:layout_width="@dimen/d40dp"
+                            android:layout_height="@dimen/d40dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center">
+                            <ImageButton
+                                android:id="@+id/ibChooseEmployee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/ic_gray_next"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            style="@style/TextRobotoLightBasic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/label_title_customer" />
+                        <ImageButton
+                            android:id="@+id/ibLiabilities"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_reason"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d15dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tvCustomer"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:lines="2"
+                            android:text="@string/label_title_empty_choose_customer"
+                            android:textColor="@color/d7A7F83"/>
+                        <LinearLayout
+                            android:id="@+id/lyContainerChooseCustomer"
+                            android:layout_width="@dimen/d40dp"
+                            android:layout_height="@dimen/d40dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:visibility="gone">
+                            <ImageButton
+                                android:id="@+id/ibChooseCustomer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/ic_gray_next"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:text="@string/label_text_address" />
+
+                    <LinearLayout
+                        style="@style/LinearLayoutVerticalBasic"
+                        android:paddingEnd="@dimen/d18dp">
+                        <TextView
+                            android:id="@+id/tvAddressCustomer"
+                            style="@style/TextRobotoRegularBasic"
+                            android:layout_marginTop="@dimen/d10dp"
+                            android:lines="3"/>
+                    </LinearLayout>
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:text="@string/label_text_contacts" />
+                    <TextView
+                        android:id="@+id/tvContactName"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_marginTop="@dimen/d10dp"
+                        android:drawableStart="@drawable/ic_contacts_name"
+                        android:drawablePadding="@dimen/d12dp"/>
+
+                    <br.com.sapereaude.maskedEditText.MaskedEditText
+                        android:id="@+id/mEdContactPhone"
+                        style="@style/TextRobotoRegularBasic"
+                        android:background="@android:color/transparent"
+                        android:enabled="false"
+                        android:layout_marginTop="@dimen/d12dp"
+                        android:drawableStart="@drawable/ic_contacts_phone"
+                        android:drawablePadding="@dimen/d14dp"
+                        mask:mask="#### ### ###" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d5dp"
+                    android:background="@color/dF1F0F5" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:layout_marginTop="@dimen/d25dp"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingEnd="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d25dp">
+
+                    <LinearLayout style="@style/LinearLayoutHorizontalBasic">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <TextView
+                                style="@style/TextRobotoLightBasic"
+                                android:text="@string/label_title_date_delivery" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/tvChooseDateDeliveryOrder"
+                                style="@style/TextRobotoRegularBasic"
+                                android:layout_width="wrap_content"
+                                android:text="02/06/2020" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutHorizontalBasic"
+                        android:layout_marginTop="@dimen/d30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextRobotoLightBasic"
+                                android:text="@string/label_title_payment_term" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/tvPaymentTermName"
+                                style="@style/TextRobotoRegularBasic"
+                                android:layout_width="wrap_content"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayoutHorizontalBasic"
+                        android:layout_marginTop="@dimen/d15dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextRobotoLightBasic"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/label_title_delivery_receive_money" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tvReiceveMoney"
+                                style="@style/TextRobotoRegularBasic"
+                                android:layout_width="wrap_content"
+                                android:background="@drawable/ic_check_box" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d5dp"
+                    android:background="@color/dF1F0F5" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:layout_marginTop="@dimen/d25dp"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingEnd="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d25dp">
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvProductOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clipToPadding="false" />
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:paddingStart="@dimen/d10dp"
+                    android:paddingEnd="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d20dp">
+
+                    <LinearLayout style="@style/LinearLayoutHorizontalBasic">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/lyAddProduct"
+                                android:layout_width="@dimen/d180dp"
+                                android:layout_height="@dimen/d50dp"
+                                android:background="@drawable/ic_add_line"
+                                android:orientation="horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="right">
+
+                            <TextView
+                                android:id="@+id/tvTotalAmount"
+                                style="@style/TextRobotoRegularBasic"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d5dp"
+                    android:background="@color/dF1F0F5" />
+
+                <LinearLayout
+                    style="@style/LinearLayoutVerticalBasic"
+                    android:paddingStart="@dimen/d18dp"
+                    android:paddingTop="@dimen/d15dp"
+                    android:paddingEnd="@dimen/d18dp"
+                    android:paddingBottom="@dimen/d45dp">
+
+                    <TextView
+                        style="@style/TextRobotoLightBasic"
+                        android:text="@string/label_title_note" />
+
+                    <EditText
+                        android:id="@+id/edtNoteOrder"
+                        style="@style/TextRobotoRegularBasic"
+                        android:layout_height="@dimen/d44dp"
+                        android:padding="0dp"
+                        android:hint="@string/label_title_hint_note"
+                        android:textColorHint="@color/dD5D5D5"
+                        android:imeOptions="actionDone"
+                        android:paddingBottom="@dimen/d10dp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/d17sp"
+                        android:backgroundTint="@android:color/transparent"
+                        />
+
+                    <Button
+                        android:id="@+id/btnCreateOrder"
+                        style="@style/ButtonBasic"
+                        android:layout_marginStart="@dimen/d30dp"
+                        android:layout_marginTop="@dimen/d30dp"
+                        android:layout_marginEnd="@dimen/d30dp"
+                        android:text="@string/label_title_create_order" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

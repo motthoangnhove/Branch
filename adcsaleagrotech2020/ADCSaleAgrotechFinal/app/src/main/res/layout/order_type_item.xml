@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--item sản phẩm-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyOrderTypeItem"
+    style="@style/RelativeLayoutBasic"
+    android:paddingBottom="@dimen/d30dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civOrderType"
+        android:layout_width="@dimen/d55dp"
+        android:layout_height="@dimen/d55dp"
+        android:layout_marginEnd="@dimen/d5dp"
+        android:background="@drawable/ic_order_type" />
+
+    <RelativeLayout
+        style="@style/RelativeLayoutBasic"
+        android:layout_height="@dimen/d55dp"
+        android:layout_toEndOf="@id/civOrderType">
+
+        <TextView
+            android:id="@+id/tvOrderType"
+            style="@style/TextRobotoRegularBasic"
+            android:text="Đơn hàng bán lẻ"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/ivOrderCreate"
+            android:textSize="@dimen/d17sp" />
+
+        <ImageView
+            android:id="@+id/ivOrderCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/d10dp"
+            android:src="@drawable/ic_next_gray2" />
+    </RelativeLayout>
+</RelativeLayout>

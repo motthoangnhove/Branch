@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--menu đơn hàng-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalBasic"
+    android:background="@android:color/transparent"
+    android:paddingTop="@dimen/d20dp"
+    android:paddingEnd="@dimen/d5dp">
+
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bg_menu_shadow"
+        android:paddingStart="@dimen/d2dp"
+        android:paddingTop="@dimen/d10dp"
+        android:paddingEnd="@dimen/d2dp"
+        android:paddingBottom="@dimen/d10dp">
+
+        <Button
+            android:id="@+id/btnDiary"
+            style="@style/ButtonMenuMore"
+            android:drawableStart="@drawable/ic_menu_more_diary"
+            android:text="@string/label_text_diary" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/ButtonMenuMore"
+            android:drawableStart="@drawable/ic_menu_more_cancel"
+            android:text="@string/label_text_cancel" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/ButtonMenuMore"
+            android:drawableStart="@drawable/ic_menu_more_delete"
+            android:text="@string/label_text_delete" />
+
+    </LinearLayout>
+</LinearLayout>

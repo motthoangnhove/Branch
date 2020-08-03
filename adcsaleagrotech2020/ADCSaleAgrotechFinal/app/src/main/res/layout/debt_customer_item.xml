@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyDebtCustomer"
+    style="@style/LinearLayoutVerticalBasic"
+    android:background="@color/dF1F0F5">
+    <LinearLayout style="@style/LinearLayoutHorizontalBasic"
+        android:paddingLeft="@dimen/d17dp"
+        android:paddingRight="@dimen/d17dp"
+        android:paddingBottom="@dimen/d20dp"
+        android:layout_marginBottom="@dimen/d5dp"
+        android:background="@color/dFFFFFF">
+
+        <RelativeLayout
+            android:layout_width="@dimen/d45dp"
+            android:layout_height="@dimen/d45dp"
+            android:layout_marginTop="@dimen/d17dp"
+            android:layout_marginEnd="@dimen/d10dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civAvatar"
+                android:layout_width="@dimen/d45dp"
+                android:layout_height="@dimen/d45dp"
+                android:background="@drawable/ic_gray_avatar_background_dialog" />
+
+            <TextView
+                android:id="@+id/tvAvatar"
+                style="@style/TextAvatarName"
+                android:text="TQ" />
+        </RelativeLayout>
+
+        <LinearLayout style="@style/LinearLayoutVerticalBasic">
+            <TextView
+                android:id="@+id/tvNameDebtCustomer"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_marginTop="@dimen/d17dp"
+                android:text="Nguyễn Văn An"
+                android:textColor="@color/d000000" />
+
+            <TextView
+                android:id="@+id/tvAddressDebtCustomer"
+                style="@style/TextRobotoRegularBasic"
+                android:layout_marginTop="@dimen/d10dp"
+                android:text="Ấp Mỹ Đông 2, xã Mỹ Quới, thị xã Ngã Năm, Sóc Trăng"
+                android:textColor="@color/d7A7F83" />
+
+            <LinearLayout
+                style="@style/LinearLayoutHorizontalBasic"
+                android:layout_marginTop="@dimen/d5dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tvDetailDebtCustomer"
+                        style="@style/TextRobotoRegularBasic"
+                        android:textSize="@dimen/d16sp"
+                        android:drawableStart="@drawable/ic_green_expand"
+                        android:drawablePadding="@dimen/d5dp"
+                        android:text="@string/label_debt_customer" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/tvTotalDebtCustomer"
+                        style="@style/TextRobotoRegularBasic"
+                        android:textSize="@dimen/d16sp"
+                        android:layout_width="wrap_content"
+                        android:text="12,000,000" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

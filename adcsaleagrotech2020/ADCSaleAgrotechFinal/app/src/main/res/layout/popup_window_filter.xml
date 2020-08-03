@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?><!--menu đơn hàng-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalBasic"
+    android:background="@drawable/bg_popup_window_dialog_bottom"
+    android:paddingStart="@dimen/d10dp"
+    android:paddingEnd="@dimen/d10dp"
+    android:paddingBottom="@dimen/d20dp">
+
+    <View
+        android:id="@+id/vTop"
+        android:layout_width="@dimen/d200dp"
+        android:layout_height="@dimen/d36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_bg_header_filter" />
+
+
+    <LinearLayout
+        android:id="@+id/lyBody"
+        style="@style/LinearLayoutVerticalBasic"
+        android:layout_below="@id/vTop"
+        android:layout_marginTop="@dimen/d15dp"
+        android:paddingStart="@dimen/d10dp"
+        android:paddingEnd="@dimen/d10dp">
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:text="@string/label_title_customer"
+            android:textSize="@dimen/d17sp" />
+
+
+        <TextView
+            android:id="@+id/tvCustomer"
+            style="@style/TextRobotoRegularBasic"
+            android:layout_marginTop="@dimen/d10dp"
+            android:drawableEnd="@drawable/ic_next_gray2"
+            android:drawablePadding="@dimen/d18dp"
+            android:text="Hộ Kinh Doanh Cửa Hàng Vật Tư Nông Nghiệp Thanh Quang"
+            android:textSize="@dimen/d17sp" />
+
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:layout_marginTop="@dimen/d30dp"
+            android:text="@string/label_title_employee"
+            android:textSize="@dimen/d17sp" />
+
+
+        <TextView
+            android:id="@+id/tvEmployeeName"
+            style="@style/TextRobotoRegularBasic"
+            android:layout_marginTop="@dimen/d10dp"
+            android:drawableEnd="@drawable/ic_next_gray2"
+            android:drawablePadding="@dimen/d18dp"
+            android:text="Nguyễn Trung Quân"
+            android:textSize="@dimen/d17sp" />
+
+        <TextView
+            style="@style/TextRobotoLightBasic"
+            android:layout_marginTop="@dimen/d30dp"
+            android:text="@string/label_text_time"
+            android:textSize="@dimen/d17sp" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontalBasic"
+            android:layout_marginTop="@dimen/d30dp"
+            android:layout_marginBottom="@dimen/d40dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                style="@style/LinearLayoutHorizontalBasic"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvStartDate"
+                    style="@style/TextRobotoLightBasic"
+                    android:layout_width="wrap_content"
+                    android:drawableStart="@drawable/ic_calendar"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:text="01/01/2020"
+                    android:hint="Từ ngày"
+                    android:textColorHint="@color/dBDBDBD"
+                    android:textColor="@color/d383F45"
+                    android:textSize="@dimen/d17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayoutHorizontalBasic"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvEndDate"
+                    style="@style/TextRobotoLightBasic"
+                    android:layout_width="wrap_content"
+                    android:drawableStart="@drawable/ic_calendar"
+                    android:drawablePadding="@dimen/d10dp"
+                    android:hint="Đến ngày"
+                    android:textColorHint="@color/dBDBDBD"
+                    android:textColor="@color/d383F45"
+                    android:textSize="@dimen/d17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/LinearLayoutHorizontalBasic"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lyBody">
+
+        <Button
+            android:id="@+id/btnCancelFilter"
+            style="@style/ButtonBasic"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_button_action_filter_cancel"
+            android:minWidth="@dimen/d120dp"
+            android:text="@string/label_text_cancel_filter"
+            android:textColor="@color/d7A7F83" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            style="@style/ButtonBasic"
+            android:layout_width="@dimen/d195dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/btnCancelFilter"
+            android:background="@drawable/bg_button_action_filter"
+            android:text="@string/label_text_filter" />
+
+    </RelativeLayout>
+</RelativeLayout>

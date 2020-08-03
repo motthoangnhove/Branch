@@ -1,0 +1,7 @@
+package com.adcvn.adcsaleagrotech.middleinterface.apimiddleinterface;
+
+import com.adcvn.adcsaleagrotech.model.receiptedtransfercustomeraction.ReceiptedTransferCustomerActionResult;
+
+public interface IReceiptedTransferCustomerAction {
+    void getReceiptedTransferCustomerAction(ReceiptedTransferCustomerActionResult receiptedTransferCustomerActionResult);
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutHorizontalBasic"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/d12dp">
+    <ImageView
+        android:id="@+id/ivMenuItemSeason"
+        style="@style/iconMenuItemLeft"
+        android:background="@drawable/ic_home_active" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvLabelMenuItemSeason"
+        style="@style/labelMenuItemLeft"
+        android:textColor="@color/d00A850"
+        android:text="@string/label_title_home_page_dashboard_activity"/>
+</LinearLayout>

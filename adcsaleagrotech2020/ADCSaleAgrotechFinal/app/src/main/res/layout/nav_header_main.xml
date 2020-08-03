@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_container"
+    style="@style/LinearLayoutVerticalBasic"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAddressFarm"
+            style="@style/fontRobotoLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dFFFFFF"
+            android:layout_marginTop="@dimen/d16dp"
+            android:text="Vùng kinh doanh"
+            android:textSize="@dimen/d17sp" />
+
+        <LinearLayout
+            style="@style/LinearLayoutHorizontalBasic"
+            android:layout_marginTop="@dimen/d5dp"
+            android:layout_marginBottom="@dimen/d13dp"
+            android:paddingRight="@dimen/d17dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvNamePosition"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/fontRobotoMedium"
+                android:textSize="@dimen/d19sp"
+                android:textColor="@color/dFFFFFF"
+                android:text="Long An"/>
+            <ImageView
+                android:id="@+id/ivChoosePosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_next" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

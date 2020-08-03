@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--màn hình dialog lỗi đăng nhập-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/d339dp"
+    android:minHeight="@dimen/d185dp"
+    android:paddingRight="@dimen/d18dp"
+    android:paddingLeft="@dimen/d18dp"
+    android:paddingTop="@dimen/d15dp"
+    android:paddingBottom="@dimen/d18dp"
+    android:orientation="vertical"
+    android:background="@drawable/border_background_message_error"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d36dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvTitleErrorMessageDialog"
+                style="@style/fontRobotoMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dEF1C23"
+                android:text="@string/label_title_error_message_login_dialog"
+                android:textSize="@dimen/d21sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvContentFirstErrorMessageDialog"
+            style="@style/TextRobotoRegularBasic"
+            android:text="@string/label_content_line_first_error_message_login_dialog"/>
+        <TextView
+            android:id="@+id/tvContentSecondErrorMessageDialog"
+            style="@style/TextRobotoRegularBasic"
+            android:text="@string/label_content_line_second_error_message_login_dialog"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/LinearLayoutVerticalBasic"
+        android:layout_marginTop="@dimen/d20dp"
+        android:gravity="end">
+        <Button
+            android:id="@+id/btnExitMessageErrorDialog"
+            style="@style/fontRobotoMedium"
+            android:layout_width="@dimen/d100dp"
+            android:layout_height="@dimen/d36dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="@dimen/d16dp"
+            android:textColor="@color/dFFFFFF"
+            android:textAllCaps="false"
+            android:text="@string/label_exit"
+            android:background="@drawable/ic_background_radius_button_cancel"/>
+    </LinearLayout>
+</LinearLayout>

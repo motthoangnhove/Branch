@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item sản phẩm chi tiết đơn hàng-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayoutVerticalBasic">
+
+    <LinearLayout style="@style/LinearLayoutHorizontalBasic">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNameProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atonik 1.8SL 10ml(gói)"
+                    android:textColor="@color/d01A8A9"
+                    android:textSize="@dimen/d17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvQuantityProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d50dp"
+                    android:layout_weight="3"
+                    android:backgroundTint="@android:color/transparent"
+                    android:digits="0123456789"
+                    android:gravity="left|center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:padding="0dp"
+                    android:text="0"
+                    android:textColor="@color/d383F45"
+                    android:textSize="@dimen/d17sp" />
+
+                <TextView
+                    android:id="@+id/tvUnitPrivate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="Chai"
+                    android:textColor="@color/d8D94A0"
+                    android:textSize="@dimen/d17sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="x"
+                    android:textColor="@color/d8D94A0"
+                    android:textSize="@dimen/d18sp" />
+
+                <TextView
+                    android:id="@+id/tvPriceProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="@color/d8D94A0"
+                    android:textSize="@dimen/d17sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="="
+                    android:textColor="@color/d8D94A0"
+                    android:textSize="@dimen/d17sp" />
+
+                <TextView
+                    android:id="@+id/tvTotalMoneyProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="right"
+                    android:textColor="@color/d8D94A0"
+                    android:textSize="@dimen/d17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1dp"
+        android:layout_marginTop="@dimen/d15dp"
+        android:background="@color/dF1F0F5" />
+</LinearLayout>

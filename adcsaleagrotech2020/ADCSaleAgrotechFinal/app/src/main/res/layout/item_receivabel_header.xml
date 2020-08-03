@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dFFFFFF">
+
+    <LinearLayout
+        android:id="@+id/lyReceivable"
+        style="@style/LinearLayoutVerticalBasic">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d5dp"
+            android:background="@color/dF1F0F5" />
+
+        <LinearLayout
+            style="@style/LinearLayoutVerticalBasic"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/d18dp"
+            android:paddingTop="@dimen/d25dp"
+            android:paddingEnd="@dimen/d18dp">
+
+            <TextView
+                android:id="@+id/tvReceivableListHeader"
+                style="@style/TextRobotoMediumBasic"
+                android:layout_marginBottom="@dimen/d3dp"
+                android:text="Sắp tới ()"
+                android:textColor="@color/d383F45"
+                android:textSize="@dimen/d19sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
