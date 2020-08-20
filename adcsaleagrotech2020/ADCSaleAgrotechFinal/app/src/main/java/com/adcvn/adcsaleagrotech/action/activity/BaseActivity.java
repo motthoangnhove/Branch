@@ -6,13 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
-<<<<<<< HEAD
- // LAM SAO DAY TA
-// cap nhat code cho ban
-=======
-// THAY ĐỔI CHƠI
-// BASE NÀO ĐÓ
->>>>>>> f4e4ebae7e20b4c5f584c2c80a69a42bce418c9c
+//HONG LANH THAY DOI
 public class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
