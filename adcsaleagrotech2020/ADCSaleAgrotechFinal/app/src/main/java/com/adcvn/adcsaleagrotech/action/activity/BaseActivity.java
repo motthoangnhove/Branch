@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
+//thanh tuan thay doi code moi lan 2
 // thanh tuan thay doi code moi lan 1
 // thanh tuan thay doi code moi
 public class BaseActivity extends AppCompatActivity {
