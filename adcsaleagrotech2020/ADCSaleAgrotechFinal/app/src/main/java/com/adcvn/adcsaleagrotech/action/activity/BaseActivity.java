@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
+// thanh tuan cap nhat code lan 1
 // thanh tuan thay doi code moi
 public class BaseActivity extends AppCompatActivity {
     @Override
