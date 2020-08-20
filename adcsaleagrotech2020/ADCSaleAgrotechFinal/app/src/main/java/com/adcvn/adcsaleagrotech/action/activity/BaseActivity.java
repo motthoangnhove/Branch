@@ -7,6 +7,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 // hong lanh thay doi code
+// thanh tuan thay doi code moi
 public class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
