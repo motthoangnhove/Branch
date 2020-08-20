@@ -6,7 +6,11 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
 // tuan thay doi code
+=======
+// lanh thay doi 
+>>>>>>> 9aa3d9c... - lanh thay doi
 public class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
