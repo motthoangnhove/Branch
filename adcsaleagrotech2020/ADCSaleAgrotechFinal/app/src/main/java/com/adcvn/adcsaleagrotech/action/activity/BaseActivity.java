@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
-//tuan thay doi
 //lanh thay doi
 public class BaseActivity extends AppCompatActivity {
     @Override
