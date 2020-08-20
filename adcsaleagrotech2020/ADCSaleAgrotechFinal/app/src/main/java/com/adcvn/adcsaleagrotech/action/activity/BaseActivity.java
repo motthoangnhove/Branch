@@ -6,8 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
-// THAY ĐỔI CHƠI
-// BASE NÀO ĐÓ
+//THANH TUAN THAY DOI TI
 public class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
