@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
 // hong lanh cap nhat code lan 1
 // hong lanh thay doi code moi
+// thanh tuan thay doi code lan 2
 // thanh tuan cap nhat code lan 1
 // thanh tuan thay doi code moi
 public class BaseActivity extends AppCompatActivity {
