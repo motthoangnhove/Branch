@@ -6,12 +6,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
-//hong lanh thay doi code moi lan 2
-//hong lanh thay doi code moi lan 1
-//hong lanh thay doi code moi
-//thanh tuan thay doi code moi lan 2
-//thanh tuan thay doi code moi lan 1
-//thanh tuan thay doi code moi
 public class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
