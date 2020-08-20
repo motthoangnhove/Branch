@@ -6,10 +6,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
-// lanh cap nhat code lan 1
-// tuan cap nhat code lan 1
-// lanh cap nhat code
-// tuan cap nhat code
 public class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
