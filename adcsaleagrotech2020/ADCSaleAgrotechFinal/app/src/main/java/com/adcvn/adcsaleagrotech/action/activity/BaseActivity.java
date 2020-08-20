@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
-//hong lanh thay doi lan 1
 //thanh tuan thay doi lan 2
 //thanh tuan thay doi lan 1
+//hong lanh thay doi code lan 2
+//hong lanh thay doi lan 1
 public class BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
