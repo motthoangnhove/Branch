@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import androidx.appcompat.app.AppCompatActivity;
+//hong lanh thay doi code moi lan 2
 //hong lanh thay doi code moi lan 1
 //hong lanh thay doi code moi
 // thanh tuan thay doi code moi lan 1
